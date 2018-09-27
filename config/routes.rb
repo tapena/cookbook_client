@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   namespace :client do
     get '/recipes' => 'recipes#index'
-  end  
+    get '/recipes/:id' => 'recipes#show'
+  end
 end
